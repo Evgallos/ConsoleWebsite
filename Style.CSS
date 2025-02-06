@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Consolas&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Consolas, monospace;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+}
+
+.terminal {
+    position: relative;
+    max-width: 80%;
+    white-space: pre-line;
+}
+
+.cursor-box {
+    color: white;
+    display: inline-block;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Blue sparkles effect */
+.sparkle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0, 162, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkle-animation 0.5s linear forwards;
+}
+
+@keyframes sparkle-animation {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(2); }
+}
