@@ -17,12 +17,16 @@ body {
     color: limegreen;
     font-size: 20px;
     padding: 20px;
-    height: 300px;
-    overflow: hidden;
+    min-height: 300px; /* Αρχικό ύψος αλλά επιτρέπει να μεγαλώνει */
+    max-width: 100%;
+    overflow-y: auto; /* Να επιτρέπει scrolling όταν χρειάζεται */
     display: flex;
     flex-direction: column;
     justify-content: start;
+    white-space: pre-wrap; /* Διατηρεί τις γραμμές */
+    word-wrap: break-word; /* Αποτρέπει το overflow λέξεων */
 }
+
 
 /* Cursor */
 .cursor-box {
