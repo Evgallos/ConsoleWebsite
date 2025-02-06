@@ -3,31 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangelos Gallos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <div class="container-fluid">
-            <div class="<nav class="navbar navbar-expand navbar-light bg-light" style="display: block;">
-                <div class="nav navbar-nav" style="display: block; margin-block-end: auto;">
-                    <a class="navbar-light" href="#">Home</a>
-                    <a class="navbar-light" href="#">Portofolio</a>
-                </div>
-            </nav>
-    </div>
 </head>
+<body>
 
-<body style="padding: 40px; margin:auto;">
-    <div class="container-fluid">
-        <div class="form-group">
-          <label for="">Command Me</label>
-          <input type="text" class="form-control" name="Command" id="" aria-describedby="helpId" placeholder="">
-          <small id="helpId" class="form-text text-muted"></small>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="#">Portfolio</a>
         </div>
-            <div class="terminal">
-                <p id="output"></p>
-                <span class="cursor-box">█</span>
+    </nav>
+
+    <div class="container mt-2">
+        <div class="row">
+            <!-- Flip Card (Αριστερά) -->
+            <div class="col-md-4 d-flex justify-content-center" style="padding-right: 180px;">
+                <div class="flip-card">
+                    <div class="flip-card-inner" style=" padding-top: 50px;">
+                        <div class="flip-card-front">
+                            <img src="imageRiga.jpg" alt="Avatar" style="width:300px;height:300px;;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Evangelos Gallos</h1>
+                            <p>System Developer C# & UX/UI Designer</p>
+                            <a href="https://github.com/Evgallos" class="btn btn-primary">Go to GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Λευκή Γραμμή -->
+            <div class="col-md-1 d-flex align-items-center">
+                <div class="divider rounded" style="line-height: 40px; width: 5px;"></div>
+            </div>
+
+            <!-- Terminal (Δεξιά) -->
+            <div class="col-md-7" style="padding-bottom: 450px;">
+                <div class="terminal">
+                    <p id="output"></p>
+                    <span class="cursor-box">█</span>
+                </div>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Evangelos Gallos</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
