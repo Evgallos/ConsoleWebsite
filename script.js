@@ -1,18 +1,66 @@
-const text = `Welcome, Traveler! 🌍✨
-Kalos irthes, traveler from your distant land! Sit here, on my website, and let me tell you my story...
+const text = `Welcome, Traveler and Wanderer, to My Website!
+I am Evangelos Gallos, a System Developer & UX/UI Designer with a passion for creating innovative, efficient, and user-friendly digital experiences. With expertise in C#, .NET, MVC, Azure, SQL, JavaScript, APIs, and UX/UI design, I bring a blend of full-stack development and user-centered design to every project I work on.
 
-The Age of the Dragon 🐉⚔️
-In an era where empires clashed and dragons soared across the skies, a warrior, a creator, and a seeker of knowledge was born. His name was Evangelos Gallos, the second son of a family of warriors, born on May 9, 1988. He grew up among five siblings, in a household where discipline and honor were carved into their very souls. His father, a hardened soldier, taught him that in life, as in battle, perseverance is the mightiest weapon.
+I have a strong background in both software development and UX/UI design, backed by hands-on experience in building responsive web applications, cloud-based solutions, and interactive user interfaces. Whether coding in C# and JavaScript or designing wireframes in Figma, I always aim to deliver high-quality solutions that enhance usability and performance.
 
-Evangelos embarked on his journey as a warrior, serving in the Special Forces of the Hellenic Marine Corps, mastering survival in extreme conditions, combat strategy, and the art of resilience. But the world was not only made of battles. His passion for technology and creation led him to forge his own kingdom—a business in Greece, which stood strong against the storms of economic crisis until fate led him to the distant lands of Sweden.
+🎯 Background (Education & Skills)
+Education:
+Lexicon (Linköping, Sweden) – Systemutvecklare (C#, .NET, MVC, Azure, SQL, JavaScript, APIs, AI)
+📅 August 2024 - February 2025
+📌 Full-stack development with C#, .NET, MVC, Azure, JavaScript, SQL.
 
-There, in this new realm, he fought to rebuild his life. Working as a driver and a laborer, he tested his strength in trade, bringing Greek mountain tea from Olympus to Scandinavia. Yet, the fire of creation inside him never faded. He dedicated two years to UX/UI Design, sending countless messages to kingdoms (companies), seeking a place among them, yet the gates remained closed—the competition was fierce.
+Google UX/UI Design Certification
+📅 Google UX/UI Design Certification
+📌 Proficiency in Figma, Adobe XD, wireframing, accessibility, and responsive design.
 
-But Evangelos did not waver. With vision and resilience, he ventured into the world of System Development, forging his destiny through programming languages and the alchemy of technology. Along his journey, he built a unique project—a website crafted in the style of a console terminal, a reflection of his soul as both a developer and a warrior of the digital realm.
+Python (Self-taught, 6 months of study)
+📌 Basic knowledge of Python before transitioning to C#.
 
-Yet fate had one more treasure in store for him—love. On August 3, 2024, Evangelos married a wonderful woman, and together they moved to Norrköping, starting a new, beautiful life. There, between the city lights and the whispering forests, he finds balance in video games, chess, hiking, and kayaking, exploring the world as he explores code—with curiosity and passion.
+WIX Website Development Certification
+📌 Built my personal website using WIX (similar to WordPress).
 
-But his journey is far from over. Evangelos Gallos is not just a hero of life. He is a warrior of tomorrow, a creator, a traveler of time and imagination.
+💼 Work Experience & Projects
+1️⃣ MaxCinema (Movie Website) – Front-end Developer & Designer
+🔹 Role: Front-end & UI/UX Design
+🔹 Technologies: C#, MVC, SQL, JavaScript, Ajax, HTML, CSS, Bootstrap
+🔹 Details:
+
+Designed the UI/UX and implemented a responsive design.
+Worked on the front-end, customizing CSS & Bootstrap.
+Contributed to some back-end development with my team.
+Available on my LinkedIn and CV.
+
+2️⃣ News Website – Full-Stack Developer (Azure & APIs)
+🔹 Role: Full-stack development
+🔹 Technologies: C#, JavaScript, Azure Functions, APIs, SQL
+🔹 Details:
+
+Developed a news/articles website.
+Used Azure Functions and APIs to handle data management.
+Integrated responsive UI and accessibility standards.
+
+3️⃣ UX/UI Design Project for a Factory in Enköping (Digimarc Tech)
+🔹 Role: UX/UI Designer
+🔹 Technologies: Figma, UX Research, Wireframing (Low & High Fidelity)
+🔹 Details:
+
+Designed a prototype application in 3.5 months.
+Presented the project to the Project Manager.
+Conducted UX research, wireframing, and accessibility improvements.
+
+4️⃣ Responsive Websites (School Projects) – Front-end Developer
+🔹 Technologies: CSS, HTML, Bootstrap, Figma
+🔹 Details:
+
+First Project: Worked on CSS, Bootstrap, UI Design, and some back-end.
+Second Project: Focused on UX, Wireframing, Colour Contrast (CCA), and Accessibility.
+Implemented responsive design and Bootstrap-based navigation (hamburger menus, buttons, etc.).
+
+🎯 Next Steps
+✔ Looking for an internship or job opportunity after February 19, 2025.
+✔ Strong full-stack development skills in C#, .NET, MVC, SQL, Azure, JavaScript.
+✔ UX/UI design experience with Google certification, Figma, Adobe XD & Accessibility Design.
+
 
 And the next chapter? It is being written now...`;
 

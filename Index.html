@@ -12,36 +12,59 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container shadow-md p-1">
-            <a class="navbar-brand" href="#">Home</a>
-            <a class="navbar-brand" href="#">Portfolio</a>
+            <a class="navbar-brand hover-text" href="#">Home</a>
+            <div class="chip m-2 bg-dark hover-text">
+                    <img src="606bb11c60149-bpfull.png" alt="badge" width="96"height="96">
+                       <span>System Developer</span> 
+                </div>
+            <a class="navbar-brand hover-text" href="#">Portfolio</a>
         </div>
     </nav>
 
     <div class="container mt-2">
-        <div class="row">
+        
+        <div class="row gy-4">
             <!-- Flip Card (Αριστερά) -->
-            <div class="col-md-4 d-flex justify-content-center" style="padding-right: 180px; padding-top: 50px;">
-                <div class="flip-card">
+            <div class="col-lg-4">
+                <div class="flip-card mb-5 mt-4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="d04379ed-8701-41f1-8e21-c9b7858f953a.png" alt="Avatar" style="width:300px;height:300px;;">
+                            <img src="d04379ed-8701-41f1-8e21-c9b7858f953a.png" alt="Avatar" style="width:300px;height:300px;">
                         </div>
                         <div class="flip-card-back">
                             <h1>Evangelos Gallos</h1>
-                            <p>System Developer C# & UX/UI Designer</p>
-                            <a href="https://github.com/Evgallos" class="btn btn-primary">Go to GitHub</a>
+                            <div class="chip text-center mb-2">
+                                <img src="606bb11c60149-bpfull.png" alt="Person" width="96" height="96">
+                                System Developer C#
+                              </div>
+                            <a href="https://github.com/Evgallos" class="btn btn-info m-1">Go to GitHub</a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="flip-card mb-4 mt-auto">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="google-ux-design-certificate_2 (3).avif" alt="Avatar" style="width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>Evangelos Gallos</h1>
+                            <div class="chip m-2">
+                                <img src="OIP.jpg" alt="badge" width="96"height="96">
+                                   <span>UX/UI Designer</span> 
+                            </div>
+                            <a href="https://evangelosgallos.wixsite.com/mysite/" class="btn btn-info shadow-btn m-1">Go to Webpage</a>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Λευκή Γραμμή -->
             <div class="col-md-1 d-flex align-items-center">
                 <div class="divider rounded" style="line-height: 40px; width: 5px;"></div>
             </div>
 
             <!-- Terminal (Δεξιά) -->
-            <div class="col-md-7" style="padding-bottom: 450px;">
+            <div class="col-md-7 mt-5">
                 <div class="terminal">
                     <p id="output"></p>
                     <p id="output"></p>
@@ -50,9 +73,8 @@
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 Evangelos Gallos</p>
+    <footer class="footer bg-dark text-center">
+        <p class="p-2">&copy; 2025 Evangelos Gallos</p>
     </footer>
 
     <script src="script.js"></script>
