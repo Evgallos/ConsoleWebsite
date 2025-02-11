@@ -14,22 +14,23 @@ body {
 /* Terminal */
 .terminal {
     background-color: rgb(64, 64, 64);
-    color: limegreen;
+    color: white;
     font-size: 20px;
     padding: 20px;
-    min-height: 300px; /* Αρχικό ύψος αλλά επιτρέπει να μεγαλώνει */
+    min-height: 300px; /* Original High and expands */
     max-width: 100%;
-    overflow-y: auto; /* Να επιτρέπει scrolling όταν χρειάζεται */
+    overflow-y: auto; /* Allow scrolling*/
     display: flex;
     flex-direction: column;
     justify-content: start;
-    white-space: pre-wrap; /* Διατηρεί τις γραμμές */
-    word-wrap: break-word; /* Αποτρέπει το overflow λέξεων */
+    white-space: pre-wrap; /* Keep the lines */
+    word-wrap: break-word; /* Doesn't allow overflow*/
 }
 
 
 /* Cursor */
 .cursor-box {
+    color: limegreen;
     display: inline-block;
     animation: blink 0.8s infinite;
 }
@@ -39,6 +40,8 @@ body {
     50% { opacity: 0; }
     100% { opacity: 1; }
 }
+
+
 
 /* Flip Card */
 .flip-card {
@@ -80,9 +83,9 @@ body {
     transform: rotateY(180deg);
 }
 
-/* Λευκή Γραμμή Διαχωρισμού */
+/* Divider Line Color*/
 .divider {
-    width: 4px;
+    width: 10px;
     height: 100%;
     background-color: limegreen;
 }
@@ -113,4 +116,16 @@ body {
   }
   .hover-text:hover {
     color: limegreen !important;
+}
+.bg-stripes {
+    background: repeating-linear-gradient(
+        30deg,
+        limegreen 0px, 
+        limegreen 33.33%, 
+        rgb(255, 255, 255) 33.33%, 
+        limegreen 66.66%, 
+        white 66.66%, 
+        limegreen 100%
+    );
+    background-size: 100px 100px;
 }
