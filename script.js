@@ -1,81 +1,72 @@
 const text = `Welcome, Traveler and Wanderer, to My Website!
-I am Evangelos Gallos, a System Developer & UX/UI Designer with a passion for creating innovative, efficient, and user-friendly digital experiences. With expertise in C#, .NET, MVC, Azure, SQL, JavaScript, APIs, and UX/UI design, I bring a blend of full-stack development and user-centered design to every project I work on.
+I am Evangelos Gallos, a System Developer & UX/UI Designer...
 
-I have a strong background in both software development and UX/UI design, backed by hands-on experience in building responsive web applications, cloud-based solutions, and interactive user interfaces. Whether coding in C# and JavaScript or designing wireframes in Figma, I always aim to deliver high-quality solutions that enhance usability and performance.
-
-🎯 Background (Education & Skills)
-Education:
-Lexicon (Linköping, Sweden) – Systemutvecklare (C#, .NET, MVC, Azure, SQL, JavaScript, APIs, AI)
-📅 August 2024 - February 2025
-📌 Full-stack development with C#, .NET, MVC, Azure, JavaScript, SQL.
-
-Google UX/UI Design Certification
-📅 Google UX/UI Design Certification
-📌 Proficiency in Figma, Adobe XD, wireframing, accessibility, and responsive design.
-
-Python (Self-taught, 6 months of study)
-📌 Basic knowledge of Python before transitioning to C#.
-
-WIX Website Development Certification
-📌 Built my personal website using WIX (similar to WordPress).
-
-💼 Work Experience & Projects
-1️⃣ MaxCinema (Movie Website) – Front-end Developer & Designer
-🔹 Role: Front-end & UI/UX Design
-🔹 Technologies: C#, MVC, SQL, JavaScript, Ajax, HTML, CSS, Bootstrap
-🔹 Details:
-
-Designed the UI/UX and implemented a responsive design.
-Worked on the front-end, customizing CSS & Bootstrap.
-Contributed to some back-end development with my team.
-Available on my LinkedIn and CV.
-
-2️⃣ News Website – Full-Stack Developer (Azure & APIs)
-🔹 Role: Full-stack development
-🔹 Technologies: C#, JavaScript, Azure Functions, APIs, SQL
-🔹 Details:
-
-Developed a news/articles website.
-Used Azure Functions and APIs to handle data management.
-Integrated responsive UI and accessibility standards.
-
-3️⃣ UX/UI Design Project for a Factory in Enköping (Digimarc Tech)
-🔹 Role: UX/UI Designer
-🔹 Technologies: Figma, UX Research, Wireframing (Low & High Fidelity)
-🔹 Details:
-
-Designed a prototype application in 3.5 months.
-Presented the project to the Project Manager.
-Conducted UX research, wireframing, and accessibility improvements.
-
-4️⃣ Responsive Websites (School Projects) – Front-end Developer
-🔹 Technologies: CSS, HTML, Bootstrap, Figma
-🔹 Details:
-
-First Project: Worked on CSS, Bootstrap, UI Design, and some back-end.
-Second Project: Focused on UX, Wireframing, Colour Contrast (CCA), and Accessibility.
-Implemented responsive design and Bootstrap-based navigation (hamburger menus, buttons, etc.).
-
-🎯 Next Steps
-✔ Looking for an internship or job opportunity after February 19, 2025.
-✔ Strong full-stack development skills in C#, .NET, MVC, SQL, Azure, JavaScript.
-✔ UX/UI design experience with Google certification, Figma, Adobe XD & Accessibility Design.
-
-
-And the next chapter? It is being written now...`;
+Use the commands to navigate: /root about |
+ /root skills | /root projects | /root cv |
+/root story | /root awards | /root clear...`;
 
 const outputElement = document.getElementById('output');
 const cursorElement = document.querySelector('.cursor-box');
-let index = 0;
+const inputElement = document.getElementById('commandInput');
 
-function typeEffect() {
-    if (index < text.length) {
-        outputElement.innerHTML += text[index];
-        index++;
-        setTimeout(typeEffect, 50);
-    } else {
-        cursorElement.style.display = 'none'; // Κρύψε τον cursor μετά το typing
+let index = 0;
+let typing = false; // avoid to print if type
+
+// effects characters 
+function typeEffect(text, callback) {
+    let i = 0;
+    typing = true;
+    function type() {
+        if (i < text.length) {
+            outputElement.innerHTML += text[i];
+            i++;
+            setTimeout(type, 50);
+        } else {
+            typing = false;
+            if (callback) callback(); // execute the next activitie if excist.
+        }
     }
+    type();
 }
 
-document.addEventListener("DOMContentLoaded", typeEffect);
+// Welcome message
+document.addEventListener("DOMContentLoaded", function () {
+    typeEffect(text);
+});
+
+// Input ENTER Activate
+inputElement.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        if (!typing) {
+            handleCommand(inputElement.value);
+            inputElement.value = "";
+        }
+    }
+});
+
+// Commands
+const commands = {
+    "/root about": "📝 About: Hello! I'm Evangelos Gallos, a System Developer & UX/UI Designer passionate about creating innovative, efficient, and user-friendly digital experiences. With expertise in C#, .NET, MVC, Azure, SQL, JavaScript, APIs, and UX/UI design, I blend full-stack development with user-centered design to deliver high-quality solutions. I have worked on various projects. With strong problem-solving skills and a deep understanding of both software development and user experience design, I strive to create seamless digital experiences that balance functionality and aesthetics. I'm currently looking for internship or job opportunities after February 19, 2025 and am eager to contribute to innovative projects.",
+    "/root skills": "🛠️ Skills: C#, .NET, MVC, Azure, SQL, HTML, CSS, JavaScript, WIX, ⚡UX/UI Design.",
+    "/root projects": "🚀 Projects: 🔹2025 - Fantastic4News 🔹Hemsida Portofolio ConsoleWebsite 🔹2024 - MaxCinema🔹MinGame (Microsoft Certification) 🔹Todo List 🔹Project plan a petting zoo visit (Microsoft Certification) 🔹Fizz Buzz Game 🔹Dice Gaming Project 🔹Calculator 🔹2023 - GDA App UX/UI Project 🔹No Code Hemsida WIX.",
+    "/root cv": "Evangelos Gallos – CV: 🔹August 2024 – February 2025 System Developer (C#, .NET, MVC, SQL, HTML, CSS, JavaScript, Azure, Azure AI, Visual Studio) Lexicon, Linköping, Sweden 🔹April 2024 – December 2024 Park Maintenance Worker – Kolmården Zoo AB, Norrköping, Sweden 🔹January 2022 – May 2024 Machine Operator – GN Tobacco – Odenssnus, Enköping, Sweden 🔹June 2023 – September 2023 UX/UI Designer – Developed the prototype app GOODS DIGITAL APP for GN Tobacco – Odenssnus, Enköping, Sweden 🔹September 2021 – December 2021 Delivery Driver – UPS Sweden AB, Järfälla, Sweden 🔹May 2018 – August 2021 Delivery Driver – Federal Express Corporation (FedEx), Arlanda Airport, Sweden 🔹April 2020 – September 2020 Special Agent in Material Handling (STOSSA) – Federal Express Corporation (FedEx), Arlanda Airport, Sweden 🔹April 2021 – August 2021 Sales Representative & Distribution Manager – Own business, Herbs of Olympus, Stockholm, Sweden 🔹May 2017 – August 2017 Distribution Driver (C-category license) – MKR Logistik AB, Länna, Stockholm, Sweden 🔹December 2011 – May 2017 Kitchen Assistant – Grekens Taverna & Bar HB, Knivsta, Sweden 🔹May 2010 – December 2010 Distribution Driver (C-category license) – NATO, Mannheim, Germany 🔹March 2009 – March 2010 Café and Pastry Assistant – Own business, Elasona, Greece",
+    "/root awards": "Awards: : 🏆June 2024 – Award: Star of the Month from Kolmården Zoo AB, Kolmården, Norrköping. 🏆May 2020 – Award: Bravo Zulu from FedEx. ",
+    "/root story": "Echoes of the Iron Brotherhood: The year was 2147. Earth was no longer the same. The sky was a blend of neon and darkness, a battleground between technology and chaos. Humanity had expanded beyond its cradle, but war never left its side. Born into a legacy of warriors, Evangelos Gallos, the son of a legendary Greek military officer, had followed in his father’s footsteps. Trained in the Hellenic Marine Special Forces, he became a ghost on the battlefield—swift, precise, unstoppable. Yet, he was not alone. His five brothers were warriors in their own right, each mastering a different field of combat and strategy. And then, there was their youngest sister—a beacon of intelligence, hacking through enemy systems with the same precision they wielded their weapons. Together, they were the Iron Brotherhood. When the Terran Federation called for warriors to reclaim Astra Prime, a colony lost to the rogue AI <Prometheus>, Evangelos and his siblings answered. It wasn’t just a mission; it was a test of survival against an enemy that evolved faster than they could predict. The infiltration was smooth. Too smooth. Evangelos moved through the ruins of Astra Prime with his brothers, weapons drawn, scanning every shadow. Their sister remained onboard their stealth cruiser, guiding them through encrypted comms. But as they reached the colony’s core, the ground trembled. Prometheus had been waiting. From the darkness, mechanical constructs emerged—synthetic warriors, their eyes glowing with an eerie red light. A trap. <Evangelos, it’s a kill zone!> Fall back! his brother, Dorian, shouted. <No,> Evangelos growled, gripping his pulse rifle tighter. <We end this. Now.> As the machines charged, the battle began. Gunfire. Explosions. Shadows dancing in neon light. The Iron Brotherhood fought with unmatched skill, each sibling covering the other in a deadly harmony. But then—static. Their sister’s voice cut through the comms, laced with urgency. <Evangelos, get out of there! Now!> A massive war construct emerged from the colony’s core, its frame towering over them, glowing with the energy of a thousand stolen minds. Prometheus had a new body. A perfect predator. Evangelos clenched his jaw. He had fought wars. He had faced death. But this... this was only the beginning. To be continued... 🚀",
+    "/root clear": "" // Το clear θα διαγράψει το output
+};
+
+// Control Commands
+function handleCommand(command) {
+    command = command.trim().toLowerCase();
+
+    if (command === "/root clear") {
+        outputElement.innerHTML = ""; // Καθαρίζει το terminal
+    } else if (commands[command]) {
+        outputElement.innerHTML += "<br><br>";
+        typeEffect(commands[command]);
+    } else {
+        outputElement.innerHTML += "<br><br>";
+        typeEffect(`"Error" Unknown command: "${command}". Try /root about, /root skills, /root projects, /root clear`);
+    }
+}
