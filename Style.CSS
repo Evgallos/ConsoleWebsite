@@ -135,6 +135,7 @@ body {
     );
     background-size: 100px 100px;
 }
+
 .glow-dark:hover {
     background-color: #000; /* black background */
     box-shadow: 0px 0px 15px 5px limegreen; /* Glow effect Limegreen*/
@@ -175,3 +176,26 @@ body {
     transform: perspective(500px) rotateX(5deg);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 } */
+
+
+/*Scroll Button CSS*/
+#scrollBtn {
+    display: none; /* Hidding beggining */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#scrollBtn:hover {
+    background-color: #555;
+}
+

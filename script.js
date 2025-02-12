@@ -71,3 +71,22 @@ function handleCommand(command) {
     }
 }
 
+
+// Reveals the button while scrolling down
+window.onscroll = function() { showScrollButton(); };
+
+function showScrollButton() {
+    let button = document.getElementById("scrollBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+// User clicl it and goes to the top navbar
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+
