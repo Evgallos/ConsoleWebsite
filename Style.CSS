@@ -129,3 +129,24 @@ body {
     );
     background-size: 100px 100px;
 }
+
+/*Scroll Button CSS*/
+#scrollBtn {
+    display: none; /* Hidding beggining */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#scrollBtn:hover {
+    background-color: #555;
+}
