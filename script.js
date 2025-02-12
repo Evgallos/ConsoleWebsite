@@ -70,3 +70,4 @@ function handleCommand(command) {
         typeEffect(`"Error" Unknown command: "${command}". Try /root about, /root skills, /root projects, /root clear`);
     }
 }
+
