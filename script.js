@@ -70,6 +70,8 @@ function handleCommand(command) {
         typeEffect(`"Error" Unknown command: "${command}". Try /root about, /root skills, /root projects, /root clear`);
     }
 }
+
+
 // Reveals the button while scrolling down
 window.onscroll = function() { showScrollButton(); };
 
@@ -86,4 +88,5 @@ function showScrollButton() {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
 
