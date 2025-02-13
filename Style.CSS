@@ -135,6 +135,10 @@ body {
     );
     background-size: 100px 100px;
 }
+.glow-fire:hover {
+    background-color: #FFD700; /* Gold background */
+    box-shadow: 0px 0px 15px 5px #FF4500; /* Glow effect OrangeRed *//
+}
 
 .glow-dark:hover {
     background-color: #000; /* black background */
@@ -219,4 +223,6 @@ body {
 #scrollBtn:hover {
     background-color: #555;
 }
+
+
 
