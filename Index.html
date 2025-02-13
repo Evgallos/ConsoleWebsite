@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark hover-text">
         <div class="container shadow-md p-1">
             <div class="dropdown">
-                <a class="btn btn-3d btn-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skils</a>
+                <a class="btn btn-3d btn-dark dropdown-toggle hover-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skils</a>
                 <ul class="dropdown-menu dropdown-menu-dark">
                     <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> C#</li>
                       <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> .Net</li>
@@ -86,8 +86,9 @@
     
     <div class="container mt-2">
         <div class="row justify-content-center align-items-start gy-4">
-            <!-- Flip Cards (Αριστερά) -->
-            <div class="col-lg-3 col-md-4 d-flex flex-column align-items-center">
+
+            <!-- Flip Cards -->
+            <div class="col-lg-4 col-md-4 d-flex flex-column align-items-center">
                 <div class="flip-card mb-4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
@@ -99,7 +100,12 @@
                                 <img src="606bb11c60149-bpfull.png" alt="Person" width="64" height="64">
                                 System Developer C#
                             </div>
-                            <a href="https://github.com/Evgallos" class="btn btn-info m-1">Go to GitHub</a>
+                            <div class="mt-2 mb-2">
+                                <a href="Evangelos_Gallos_CV_IT.pdf" class="btn btn-outline-success glow-dark text-light" download>
+                                    <i class="bi bi-file-earmark-pdf"></i> Download CV
+                                </a>
+                            </div>
+                            <a href="https://github.com/Evgallos" class="btn btn-info m-1 glow-light text-light">Go to GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -115,37 +121,24 @@
                                 <img src="OIP.jpg" alt="badge" width="64" height="64">
                                 <span>UX/UI Designer</span>
                             </div>
-                            <a href="https://evangelosgallos.wixsite.com/mysite/" class="btn btn-info shadow-btn m-1">Go to Webpage</a>
+                            <div class="mt-2 mb-2">
+                                <a href="Certification UX Design H5LZFN96CXA7.pdf" class="btn btn-outline-primary glow-light text-light" download>
+                                    <i class="bi bi-file-earmark-pdf"></i>My Certificate
+                                </a>
+                            </div>
+                            <a href="https://evangelosgallos.wixsite.com/mysite/" class="btn btn-info glow-light m-1 text-light">Go to Webpage</a>
                         </div>
                     </div>
                 </div>
-                <div class="dropend glow-dark">
-                    <a class="btn btn-3d dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Weather</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li>
-                            <iframe class="glow-dark" src="https://wttr.in/Norrköping?format=3" width="300" height="50" style="border:none;"></iframe>
-                        </li>
-                        <li>
-                            <iframe class="glow-dark" src="https://wttr.in/Stockholm?format=3" width="300" height="50" style="border:none;"></iframe>
-                        </li>
-                        <li>
-                            <iframe class="glow-dark" src="https://wttr.in/Berlin?format=3" width="300" height="50" style="border:none;"></iframe>
-                        </li>
-                        <li>
-                            <iframe class="glow-dark" src="https://wttr.in/Athens?format=3" width="300" height="50" style="border:none;"></iframe>
-                        </li>
-                    </ul>
-                </div>
-                
             </div>
     
-            <!-- Divider Line -->
+            <!-- Divider
             <div class="col-md-1 d-flex align-items-center justify-content-center shadow-btn">
                 <div class="divider rounded  bg-stripes" style="height: 560px; width: 10px;"></div>
-            </div>
+            </div>Line -->
             
             <!-- Terminal -->
-            <div class="col-lg-6 col-md-6 d-flex flex-column align-items-center bg-stripes glass-effect">
+            <div class="col-lg-8 col-md-6 d-flex flex-column align-items-center bg-stripes glass-effect">
                 <div class="terminal p-3 w-100 text-light bg-dark rounded">
                     <p id="output"></p>
                     <span class="cursor-box">█</span>
@@ -156,6 +149,57 @@
             </div>
         </div>
     </div>
+    <div class="container mt-2">
+        <div class="row justify-content-start">
+            <div class="col-auto d-flex gap-3">
+
+                <!-- Toggle Button -->
+                <button class="btn btn-3d-perspective glow-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    Weather Linux
+                </button>
+    
+                <!-- Dropdown Button -->
+                <div class="dropend">
+                    <a class="btn btn-3d dropdown-toggle glow-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cities
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark btn-d-perspective">
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Norrköping?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Stockholm?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Berlin?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Moscow?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Sanghai?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Tokyo?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/NewYork?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                        <li>
+                            <iframe class="glow-dark" src="https://wttr.in/Athens?format=3" width="300" height="50" style="border:none;"></iframe>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end bg-dark rounded" style="width: 900px;" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <button type="button" class="btn-close m-4 glow-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <iframe class="mt-4 justify-content-center" src="https://wttr.in" width="900" height="750" style="border:none;"></iframe>
+        </div>
+    </div>
+    
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
        <spa class="hover-text shadow-btn glass-effect">&#11161; Top</spa> 
     </button>
