@@ -13,50 +13,72 @@
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark hover-text">
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark hover-text">
         <div class="container shadow-md p-1">
-            <div class="dropdown">
-                <a class="btn btn-3d btn-dark dropdown-toggle hover-text" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Skils</a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> C#</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> .Net</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-layer-group"></i> MVC</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-database"></i> SQL</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> Azure</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-brain"></i> Azure AI</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-plug"></i> API</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-git-alt"></i> Git</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> Office 365</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-html5"></i> HTML</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-css3-alt"></i> CSS</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-js"></i> JavaScript</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-linux"></i> Linux</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-python"></i> Python</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-figma"></i> Figma</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-adobe"></i> Adobe XD</li>
-                      <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-code"></i> Visual Studio</li>
+            <!-- Burger menu button -->
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Skills dropdown -->
+                 <div class="dropdown me-3">
+                    <a class="btn btn-3d btn-dark dropdown-toggle hover-text" href="#" role="button" data-bs-toggle="dropdown">
+                        Skills
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> C#</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> .Net</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-layer-group"></i> MVC</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-database"></i> SQL</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> Azure</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-brain"></i> Azure AI</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-plug"></i> API</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-git-alt"></i> Git</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-microsoft"></i> Office 365</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-html5"></i> HTML</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-linux"></i> Linux</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-python"></i> Python</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-figma"></i> Figma</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-brands fa-adobe"></i> Adobe XD</li>
+                        <li class="list-group-item bg-dark text-light hover-text"><i class="fa-solid fa-code"></i> Visual Studio</li>
+                    </ul>
+                </div>
+                
+                <!-- Branding -->
+                 <div class="chip col-md-4 bg-dark" style="padding-left: 400px;">
+                    <img src="./images/606bb11c60149-bpfull.png" alt="badge" width="96" height="96">
+                    <span class="navbar-brand hover-text d-flex">System Developer</span>
+                </div>
+                
+                <!-- Navigation links -->
+                 <ul class="navbar-nav ms-auto" style="padding-right: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link hover-text text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-text text-light" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-text text-light" href="solarPage.html">Solar System</a>
                     </li>
                 </ul>
             </div>
-            <div class="chip m-2 bg-dark">
-                    <img src="606bb11c60149-bpfull.png" alt="badge" width="96"height="96">
-                       <span class="navbar-brand hover-text">System Developer</span> 
-            </div>
-            <div>
-                <a class="navbar-brand hover-text btn-3d glow-light" href="solarPage.html">Solar System</a>
-            </div>
         </div>
     </nav>
-
-    <div class="container mt-auto mb-5">
-        <div class="row justify-content-center">
-            <div class="col-2 col-md-4 col-lg-2">
+    
+    <!-- Social Links (Responsive) -->
+     <div class="container mt-auto mb-5">
+        <div class="row justify-content-center g-2">
+            <div class="col-6 col-md-4 col-lg-2">
                 <a href="https://linkedin.com/in/evangelos-gallos/" target="_blank" class="btn btn-dark w-100">
-                    <i class="fab fa-linkedin"></i>LinkedIn
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
             </div>
-            <div class="col-2 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2">
                 <a href="https://github.com/Evgallos" target="_blank" class="btn btn-dark w-100">
                     <i class="fab fa-github"></i> GitHub
                 </a>
@@ -66,17 +88,17 @@
                     <i class="fa-brands fa-microsoft"></i> Microsoft
                 </a>
             </div>
-            <div class="col-2 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2">
                 <a href="https://evangelosgallos.wixsite.com/mysite/" target="_blank" class="btn btn-dark w-100">
                     <i class="fas fa-globe"></i> Webpage
                 </a>
             </div>
-            <div class="col-2 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2">
                 <a href="https://www.credly.com/badges/058d2d8c-6c21-497f-9779-334f58e848c3" target="_blank" class="btn btn-dark w-100">
                     <i class="fas fa-certificate"></i> Credly
                 </a>
             </div>
-            <div class="col-2 col-md-4 col-lg-2">
+            <div class="col-6 col-md-4 col-lg-2">
                 <a href="https://www.figma.com/proto/rwjQHEh58qPfInwXwEnXSI/Projects?node-id=1119-221&t=Lq2CQjPSkO4ulT1B-1" target="_blank" class="btn btn-dark w-100">
                     <i class="fab fa-figma"></i> Figma
                 </a>
@@ -92,12 +114,12 @@
                 <div class="flip-card mb-4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="bikecycle.jpg" alt="Avatar" style="width:250px;height:250px;">
+                            <img src="./images/bikecycle.jpg" alt="Avatar" style="width:250px;height:250px;">
                         </div>
                         <div class="flip-card-back glass-effect">
                             <h1 class="fs-5">Evangelos Gallos</h1>
                             <div class="chip text-center mb-2">
-                                <img src="606bb11c60149-bpfull.png" alt="Person" width="64" height="64">
+                                <img src="./images/606bb11c60149-bpfull.png" alt="Person" width="64" height="64">
                                 System Developer C#
                             </div>
                             <div class="mt-2 mb-2">
@@ -113,12 +135,12 @@
                 <div class="flip-card mb-4">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="google-ux-design-certificate_2 (3).avif" alt="Avatar" style="width:250px;height:250px;">
+                            <img src="./images/google-ux-design-certificate_2 (3).avif" alt="Avatar" style="width:250px;height:250px;">
                         </div>
                         <div class="flip-card-back">
                             <h1 class="fs-5">Evangelos Gallos</h1>
                             <div class="chip m-2">
-                                <img src="OIP.jpg" alt="badge" width="64" height="64">
+                                <img src="./images/OIP.jpg" alt="badge" width="64" height="64">
                                 <span>UX/UI Designer</span>
                             </div>
                             <div class="mt-2 mb-2">
@@ -199,15 +221,16 @@
             <iframe class="mt-4 justify-content-center" src="https://wttr.in" width="900" height="750" style="border:none;"></iframe>
         </div>
     </div>
-    
+
     <button onclick="scrollToTop()" id="scrollBtn" title="Go to top">
-       <spa class="hover-text shadow-btn glass-effect">&#11161; Top</spa> 
-    </button>
-    
-    <footer class="footer bg-dark text-center">
-        <p class="p-2">&copy; 2025 Evangelos Gallos</p>
+        <spa class="hover-text shadow-btn glass-effect">&#11161; Top</spa> 
+     </button>
+
+     <script src="script.js"></script>
+
+    <footer class="footer bg-dark text-center mt-auto">
+            <p class="p-2">&copy; 2025 Evangelos Gallos</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
