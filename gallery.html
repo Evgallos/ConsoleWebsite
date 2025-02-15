@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery Projects</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+
+/*Navbar */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Above from all*/
+}
+
+footer{
+    position:fixed;
+    bottom: 0;;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+body {
+    padding-top: 50px; /* Adjust the height of navbar */
+    background: linear-gradient(to right, #2c5364, #0f2027);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Στυλ για τον τίτλο */
+.title {
+    position: absolute;
+    bottom: -50px; /* Under picture */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+        </style>
+    </head>
+
+    <body>
+        <header>
+                <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark hover-text">
+        <div class="container shadow-md p-1">
+            <!-- Burger menu button -->
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+                <!-- Branding -->
+                 <div class="chip col-md-4 bg-dark">
+                    <img src="./images/606bb11c60149-bpfull.png" alt="badge" width="96" height="96">
+                    <span class="navbar-brand hover-text d-flex">System Developer</span>
+                </div>
+                
+                <!-- Navigation links -->
+                 <ul class="navbar-nav ms-auto" style="padding-right: 20px;">
+                    <li class="nav-item">
+                        <a class="nav-link hover-text text-light" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-text text-light" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hover-text text-light" href="solarPage.html">Solar System</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        </header>
+
+        <div class="slider">
+            <span style="--i:1;">
+                <img src="./images/Max Cinema Homepage.png" alt="MaxCinema project">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/MaxCinema.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Max Cinema
+                    </a>
+                </div>
+            </span>
+            <span style="--i:2;">
+                <img src="./images/iPhone 13 Pro Max - Claim Card page.png" alt="project">
+                <div class="title">
+                    <a href="https://www.figma.com/proto/rwjQHEh58qPfInwXwEnXSI/Projects?node-id=1119-221&t=Lq2CQjPSkO4ulT1B-1" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>GDA APP
+                    </a>
+                </div>
+            </span>
+            <span style="--i:3;">
+                <img src="./images/Mini Game.png" alt="project">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/MiniGame.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Mini Game
+                    </a>
+                </div>
+            </span>
+            <span style="--i:4;">
+                <img src="./images/fizz buzz game.png" alt="">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/FizzBuzzGameProject.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Fizz Buzz Game
+                    </a>
+                </div>
+            </span>
+            <span style="--i:5;">
+                <img src="./images/TodoList.png" alt="TodoListProject">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/TodoList.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Todo List
+                    </a>
+                </div>
+            </span>
+            <span style="--i:6;">
+                <img src="./images/Calculator.png" alt="">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/Calculator.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Calculator
+                    </a>
+                </div>
+            </span>
+            <span style="--i:7;">
+                <img src="./images/Dice Gaming.png" alt="">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/DiceGamingProject.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Dice Gaming
+                    </a>
+                </div>
+            </span>
+            <span style="--i:8;">
+                <img src="./images/ConsolewebsiteMyPortfolio.png" alt="">
+                <div class="title">
+                    <a href="https://github.com/Evgallos/ConsoleWebsite.git" class="btn btn-outline-primary glow-light text-light" download>
+                        <i class="bi bi-file-earmark-pdf"></i>Console Webpage
+                    </a>
+                </div>
+            </span>
+        </div>
+
+    <footer class="footer bg-dark text-center mt-auto">
+        <p class="p-2">&copy; 2025 Evangelos Gallos</p>
+    </footer>
+
+    </body>
+</html>
