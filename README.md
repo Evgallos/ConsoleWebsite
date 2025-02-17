@@ -24,7 +24,7 @@ This project is a stepping stone in my journey as a **developer**, where I conti
 
 ## 🌍 Credits for Solar System  
 
-The **Solar System** component featured in this project was **not my original idea** or development. I utilized an existing open-source project, and all **credits go to the original creator**.  
+The **Solar System** component featured in this project was **not my original idea** or development. I utilized an existing open-source project, and all **credits go to the original creator: CogniSolver**.  
 
 If you are the original creator and would like proper attribution or modifications, feel free to contact me!  
 
