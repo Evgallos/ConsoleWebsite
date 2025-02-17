@@ -9,6 +9,9 @@
 
 **ConsoleWebsite** is my **first personal website** built entirely with code. As a certified **UX/UI Designer**, I wanted to create a project that combines both **design principles** and **functional development** using **Visual Studio Code, HTML, CSS, and JavaScript**.  
 
+**🖥️ ConsoleWebsite - A Retro-Modern Fusion:**
+
+The idea for this project came from nostalgia for the '80s and '90s. As a Linux user, I wanted to create a website inspired by the aesthetics of old-school terminals while blending them with the modern digital world. This project represents my passion for retro computing and minimalistic design, bringing a unique and interactive experience to my portfolio.
 This project serves as a portfolio piece to showcase my **front-end and back-end development skills**, as well as my ability to create an interactive and engaging user experience. The website features a **console-inspired UI**, adding a unique touch to traditional web design.  
 
 > 🚀 **Key Features:**  
