@@ -25,17 +25,10 @@ This project is a stepping stone in my journey as a **developer**, where I conti
 
 ---
 
-## 🌍 Credits for Solar System  
-
-The **Solar System** component featured in this project was **not my original idea** or development. I utilized an existing open-source project, and all **credits go to the original creator: CogniSolver**.  
-
-If you are the original creator and would like proper attribution or modifications, feel free to contact me!  
-
----
 
 ## 🔐 License & Copyright  
 
-📌 **My code (excluding the Solar System)** is **protected** under the following terms:  
+📌 **My code ** is **protected** under the following terms:  
 
 ```plaintext
 Copyright (c) 2025 Evangelos Gallos. All rights reserved.
@@ -45,14 +38,6 @@ Unauthorized copying, modification, distribution, or any form of use is strictly
 
 For inquiries, contact: [evangelos.gallos@gmail.com]
 ```
-
-📌 **The Solar System component follows its original license and is NOT covered under my restrictions.**  
-```
-The Solar System component in this project was created by CogniSolver.  
-All rights and credits belong to the original creator.  
-This part of the project follows the MIT license.
-``` 
-
 
 If you would like to use any part of my **original work**, please **contact me** first.  
 
