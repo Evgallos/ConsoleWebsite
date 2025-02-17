@@ -7,7 +7,7 @@
 
 ## 📝 About the Project  
 
-**ConsoleWebsite** is my **first personal website** built entirely with code. As a certified **UX/UI Designer**, I wanted to create a project that combines both **design principles** and **functional development** using **C#, HTML, CSS, and JavaScript**.  
+**ConsoleWebsite** is my **first personal website** built entirely with code. As a certified **UX/UI Designer**, I wanted to create a project that combines both **design principles** and **functional development** using **Visual Studio Code, HTML, CSS, and JavaScript**.  
 
 This project serves as a portfolio piece to showcase my **front-end and back-end development skills**, as well as my ability to create an interactive and engaging user experience. The website features a **console-inspired UI**, adding a unique touch to traditional web design.  
 
