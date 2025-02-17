@@ -65,6 +65,6 @@ If you have any feedback, suggestions, or collaboration ideas, feel free to reac
 
 ---
 
-🚀 **Thank you for checking out my project!** I hope to continue building and improving my skills in both **UX/UI and software development**. 🎨💻
+🚀 **Thank you for checking out my project!** I hope to continue building and improving my skills in both **UX/UI and software development**. 💻
 
 [![Netlify deploy-Status?branch=development](https://api.netlify.com/api/v1/badges/50d7ab68-e997-43d3-968b-a2945df84a8f/deploy-status)](https://app.netlify.com/sites/euphonious-pasca-7962d3/deploys)
