@@ -1,7 +1,7 @@
 # 📜 ConsoleWebsite - My First Coded Website  
 
 🔗 **Live :** [www.evgallos.com](https://www.evgallos.com)  
-🔗 **GitHub Repository:**  [www.github.com/Evgallos(https://github.com/Evgallos/ConsoleWebsite)
+🔗 **GitHub Repository:**  [www.github.com/Evgallos/ConsoleWebsite)
 
 ---
 
