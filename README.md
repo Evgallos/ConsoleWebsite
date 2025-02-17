@@ -1,6 +1,6 @@
 # 📜 ConsoleWebsite - My First Coded Website  
 
-🔗 **Live Demo:** [www.evgallos.com](https://www.evgallos.com)  
+🔗 **Live :** [www.evgallos.com](https://www.evgallos.com)  
 🔗 **GitHub Repository:** [github.com/Evgallos](https://github.com/Evgallos)  
 
 ---
